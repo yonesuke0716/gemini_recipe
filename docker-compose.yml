@@ -1,0 +1,14 @@
+services:
+  gemini_recipe:
+    container_name: gemini_recipe
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: gemini_recipe
+    volumes:
+      - ./src:/app
+    tty: true
+    ports:
+      - 8501:8501
+    env_file: .env
+

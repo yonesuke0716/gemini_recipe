@@ -1,0 +1,12 @@
+numpy
+pandas
+duckdb
+fsspec
+streamlit
+pygwalker
+quickjs
+google-generativeai
+langchain-google-genai
+langchain_experimental
+tabulate
+grpcio==1.60.1
