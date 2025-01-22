@@ -24,7 +24,7 @@ st.set_page_config(page_title="gemini_agent", layout="wide")
 
 # === Streamlitアプリ ===
 st.title("GeminiAgent_DataAnalyzer")
-st.subheader("PyGWalker")
+st.subheader("探索的データ分析")
 st.sidebar.subheader("GeminiAgent")
 # ログキャプチャ用のStringIOを設定
 log_stream = StringIO()
