@@ -25,7 +25,7 @@ st.set_page_config(page_title="gemini_agent", layout="wide")
 # === Streamlitアプリ ===
 st.title("GeminiAgent_DataAnalyzer")
 st.subheader("探索的データ分析")
-st.sidebar.subheader("GeminiAgent")
+
 # ログキャプチャ用のStringIOを設定
 log_stream = StringIO()
 sys.stdout = log_stream  # 標準出力をStringIOにリダイレクト
@@ -36,6 +36,7 @@ uploaded_file = st.sidebar.file_uploader(
 # ファイルがアップロードされている場合
 if uploaded_file is not None:
     try:
+        st.sidebar.subheader("GeminiAgent")
         # CSVデータの読み込み
         df = duckdb.read_csv(uploaded_file).to_df()
         renderer = get_pyg_renderer(df)
