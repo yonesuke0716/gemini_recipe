@@ -2,7 +2,6 @@ import os
 import google.generativeai as genai
 
 import httpx
-import os
 import base64
 
 api_key = os.environ["GOOGLE_API_KEY"]
